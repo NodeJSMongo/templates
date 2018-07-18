@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Header Menu Indicator on scroll</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar">
+      <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+          <path d="M0, 5 30, 5" stroke="#fff" stroke-width="5"/>
+          <path d="M0, 14 30, 14" stroke="#fff" stroke-width="5"/>
+          <path d="M0, 23 30, 23" stroke="#fff" stroke-width="5"/>
+        </svg>
+        </a>
+      </span>
+      <ul class="navbar-nav">
+        <li> <a href="#">Home</a> </li>
+        <li><a href="#">Services</a> </li>
+        <li><a href="#">Contact</a> </li>
+        <li><a href="#">About</a> </li>
+      </ul>
+    </nav>
+
+    <div class="side-nav" id="side-menu">
+      <a href="#" class="btn-close" onClick="closeSideMenu()">&times;</a> <!-- &times; gives the x mark  -->
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+      <a href="#">About</a>
+    </div>
+
+    <div class="" id="main">
+      <h1>Responsive Side Menu</h1>
+    </div>
+  </body>
+</html>

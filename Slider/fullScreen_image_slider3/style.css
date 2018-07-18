@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+#slider{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#slider .slides {
+  display: block;
+  width: 6000px;
+  height: 100vh;
+  margin:0;
+  padding: 0;
+}
+
+#slider .slide{
+  float: left;
+  list-style-type: none;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.text-muted{
+  text-align: center;
+  font-size: 5rem;
+  color: #fff;
+}

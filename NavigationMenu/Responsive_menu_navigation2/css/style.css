@@ -1,0 +1,90 @@
+body{
+  font-family: "Arial", Serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #fdd;
+  position: relative;
+}
+
+ul li{
+  display: inline-block;
+}
+
+ul li a{
+  color: #292292;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+}
+
+ul li:hover{
+  background: lightgrey;
+}
+
+ul ul{
+  position: absolute;
+  min-width: 200px;
+  background: lightgrey;
+  display: none;
+}
+
+ul ul li{
+  display: block;
+  background: #e3e3e3;
+}
+
+
+ul li:hover ul{
+  display: block;
+}
+
+ul li i{
+  color: #292292;
+  float: right;
+  padding-left: 20px;
+}
+
+
+nav div{
+  background: lightgrey;
+  color: #292292;
+  font-size: 24px;
+  padding: 0.6em;
+  cursor: pointer;
+  display: none;
+}
+
+
+@media(max-width: 568px){
+  nav div{
+    display: block;
+  }
+  ul{
+    display: none;
+    position: static;
+    background: #e3e3e3;
+  }
+
+  ul li{
+    display: block;
+  }
+
+  ul ul{
+    position: static;
+    background: #e3e3e3;
+  }
+}
+
+@media(max-width: 568px){
+  nav div{
+    display: block;
+  }
+}

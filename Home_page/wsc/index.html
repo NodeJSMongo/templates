@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animated JQSlider</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Site header -->
+    <header class="countDownContainer">
+        <div>
+          <span id="days">120</span>
+          <span id="hours">4</span>
+          <span id="minutes">12</span>
+          <span id="seconds">22</span>
+        </div>
+        <div>
+          <span>Days</span>
+          <span>Hours</span>
+          <span>Minutes</span>
+          <span>Seconds</span>
+        </div>
+    </header>
+    <!-- Hero Slider -->
+    <div id="sliderHero">
+      <ul class="slidesHero">
+        <li class="slideHero slide1Hero"><img src="images/bg1.jpg" alt=""> </li>
+        <li class="slideHero slide2Hero"><img src="images/bg2.jpg" alt=""> </li>
+      </ul>
+    </div>
+    <!-- About section in tab_pane -->
+
+    <section class="about">
+      <div class="video_item">
+        Video item will be placed here
+      </div>
+      <div class="tabContainer">
+        <div class="buttonContainer">
+          <button type="button" name="button" onclick="showPanel(0, '#fff')">Invitation from Host</button>
+          <button type="button" name="button" onclick="showPanel(1, '#fff')">Invited Guests</button>
+          <button type="button" name="button" onclick="showPanel(2, '#fff')">Fun &amp; Foods</button>
+        </div>
+          <div class="tabPanel">
+                <p>
+								সিলেট আমার প্রাণ, সিলেট আমার জান, সিলেট আমার অহংকার, সিলেটের বুকে চলে যাওয়া সুরমা কুসিয়ারা মনু নদীর বহমান।
+                চল চল টরেন্টা চল “বিশ্ব সিলেট সম্মেলন ২০১৮” সফল কর।
+								</p>
+				        		<p class="sppb-cta-text">
+								You are cordially invited to attend the World Sylhet Convention in Toronto on September 1<sup>st</sup> and 2<sup>nd</sup>, 2018.
+								</p>
+								<p>The Jalalabad Association of Toronto is a not-for-profit organization arranging this convention as a community service for
+                  celebration of the cultural heritage of Sylhet. No remuneration is being paid to the participants. We are going to host this
+                  two days program in the heart of Bangladeshi community in Toronto at "Grand Palace Convention Center"</p>
+								<p>Your presence, meeting others and sharing the unique tradition of Sylhet will be highly appreciated by the global
+                  Sylheti community at the convention.</p>
+								<p> <strong> Regards, </strong> </p>
+								<p><strong> Rasheda K Chowdhury</strong>,<i> Convenor, World Sylhet Convention 2018, Toronto, Canada. </i></p>
+								<p><strong> Debobrata Dey Tomal</strong>,<i> President, Jalalabad Association of Toronto, Canada. </i></p>
+								<p><strong> Mahbub Chowdhury</strong>,<i> General Secretary, Jalalabad Association of Toronto, Canada.</i></p>
+								<p><strong> Ilias Khan </strong>,<i> Press Secretary, Jalalabad Association of Toronto, Canada.</i> </p>
+              </div>
+          <div class="tabPanel">
+            <p>
+              Please <a href="images/WSC2018-Invited_Guests.pdf" >click here </a> to view the list of all invited guests.
+              This is not a final list and will be updated over the time.
+            </p>
+          </div>
+          <div class="tabPanel">
+            <h3 class="tab-content-title">Fun and Food is Unlimited</h3>
+          </div>
+      </div>
+    </section>
+
+    <!-- Counting Attendence of the clients -->
+
+    <div class="attendenceCounter">
+      <div id="count">4000</div>
+    </div>
+
+    <!-- Event Schedule tabs will go here -->
+    <h2 class="">Program Details</h2>
+    <p class="">Don't Miss a Topic on the Event</p>
+    <div class="tabContainerEvent">
+      <div class="buttonContainerEvent">
+        <button type="button" name="button" onclick="showPanelEvent(0, '#fff')">Day One</button>
+        <button type="button" name="button" onclick="showPanelEvent(1, '#fff')">Day Two</button>
+      </div>
+      <div class="tabPanelEvent">
+          <h2 class="">Saturday, September 1<sup>st</sup></h2>
+          <div class="scheduleContent">
+            <div class="">
+              <span class="">10:00AM</span>
+              <span></span>
+              <span>
+                  <h3 class="">Registration</h3> <p class="">Pick up your name badge and goodie bag</p>
+              </span>
+            </div>
+            <div class="">
+              <span class="">10:30 - Noon</span>
+              <span><img class="" src="images/speakers/speaker6.jpg" alt="" /></span>
+              <span>
+                <h3 class="">TBD</h3><h4 class="">Welcome</h4><p class="">Welcome by Jalalabad Association of Toronto and Introduction of guests from all over the world.</p>
+              </span>
+            </div>
+            <div class="">
+              <span class="">12:30 - 13:30PM</span>
+              <span><img class="" src="images/speakers/speaker5.jpg" alt="" /></span>
+              <span>
+                  <h3 class="">TBD</h3><h4 class="">Lunch break</h4><p class="">TBD</p>
+              </span>
+            </div>
+            <div class="">
+              <span class="">13:30 - 14:30PM</span>
+              <span></span>
+              <span>
+                <h3 class="">Lunch</h3><p class="">Five star buffet for everybody.</p>
+              </span>
+            </div>
+            <div class="">
+              <span class="">13:30 - 14:30PM</span>
+              <span></span>
+              <span>
+                <h3 class="">Lunch</h3><p class="">Five star buffet for everybody.</p>
+              </span>
+            </div>
+            <div class="">
+              <span class="">14:30 - 16:00PM</span>
+              <span><img class="" src="images/speakers/speaker3.jpg" alt="" /></span>
+              <span>
+                <h3 class="">TBD</h3><p class="">TBD</p>
+              </span>
+            </div>
+            <div class="">
+              <span class="">16:00 - 18:00PM</span>
+              <span><img class="" src="images/speakers/speaker3.jpg" alt="" /></span>
+              <span>
+                <h3 class="">TBD</h3><p class="">TBD</p>
+              </span>
+            </div>
+            <div class="">
+              <span class="">18:00 - 22:00PM</span>
+              <span><img class="" src="images/speakers/speaker3.jpg" alt="" /></span>
+              <span>
+                <h3 class="">TBD</h3><p class="">TBD</p>
+              </span>
+            </div>
+          </div>
+      </div>
+      <div class="tabPanelEvent">
+        <h2 class="">Saturday, September 2<sup>st</sup></h2>
+        <div class="scheduleContent">
+          <div class="">
+            <span class="">10:00AM</span>
+            <span></span>
+            <span>
+                <h3 class="">Registration</h3><p class="">Pick up your name badge and goodie bag</p>
+            </span>
+          </div>
+          <div class="">
+            <span class="">10:30 - Noon</span>
+            <span><img class="" src="images/speakers/speaker6.jpg" alt="" /></span>
+            <span>
+              <h3 class="">TBD</h3><h4 class="">Welcome</h4><p class="">Welcome by Jalalabad Association of Toronto and Introduction of guests from all over the world.</p>
+            </span>
+          </div>
+          <div class="">
+            <span class="">12:30 - 13:30PM</span>
+            <span><img class="" src="images/speakers/speaker5.jpg" alt="" /></span>
+            <span>
+                <h3 class="">TBD</h3><h4 class="">Lunch break</h4><p class="">TBD</p>
+            </span>
+          </div>
+          <div class="">
+            <span class="">13:30 - 14:30PM</span>
+            <span></span>
+            <span>
+              <h3 class="">Lunch</h3><p class="">Five star buffet for everybody.</p>
+            </span>
+          </div>
+          <div class="">
+            <span class="">13:30 - 14:30PM</span>
+            <span></span>
+            <span>
+              <h3 class="">Lunch</h3><p class="">Five star buffet for everybody.</p>
+            </span>
+          </div>
+          <div class="">
+            <span class="">14:30 - 16:00PM</span>
+            <span><img class="" src="images/speakers/speaker3.jpg" alt="" /></span>
+            <span>
+              <h3 class="">TBD</h3><p class="">TBD</p>
+            </span>
+          </div>
+          <div class="">
+            <span class="">16:00 - 18:00PM</span>
+            <span><img class="" src="images/speakers/speaker3.jpg" alt="" /></span>
+            <span>
+              <h3 class="">TBD</h3><p class="">TBD</p>
+            </span>
+          </div>
+          <div class="">
+            <span class="">18:00 - 22:00PM</span>
+            <span><img class="" src="images/speakers/speaker3.jpg" alt="" /></span>
+            <span>
+              <h3 class="">TBD</h3><p class="">TBD</p>
+            </span>
+          </div>
+        </div>
+      </div>
+      <a href="images/bg1.jpg" download="World_sylhet_convention_2018"> <button type="button" name="button">DOWNLOAD EVENT SCEDULE</button> </a>
+    </div>
+
+    <!-- Speaker's card section mark ups -->
+
+    <div class="speakers">
+    <section class="info1">
+        <img src="images/speaker1.jpg" alt="">
+        <div class="">
+          <h2>Sir Fazle Hasan Abed</h2>
+          <p>Founder and chairman of BRAC, Bangladesh</p>
+        </div>
+    </section>
+    <section class="info1">
+        <img src="images/speaker2.jpg" alt="">
+        <div class="">
+          <h2>Ziauddin Ahmed, M.D.FACP</h2>
+          <p>Professor of Medicine, Drexel University College of Medicine, Philadelphia</p>
+        </div>
+    </section>
+    <section class="info1">
+        <img src="images/speaker3.jpg" alt="">
+        <div class="">
+          <h2>Rasheda K. Choudhury</h2>
+          <p>Former Adviser, Caretaker Government(2008), Bangldesh</p>
+        </div>
+    </section>
+    <section class="info1">
+        <img src="images/speaker4.jpg" alt="">
+        <div class="">
+          <h2>Abulkalam Abdul Momen</h2>
+          <p>Economist and Diplomat, Bangladesh</p>
+        </div>
+    </section>
+</div>
+
+<!-- Sponsors & partners section will go here -->
+
+<div class=".wrapper">
+  <div class="sponsor-partner">
+    <h2>Sponsors &amp; Partners</h2>
+    <p>Who helped to make World Sylhet Convention 2018 successful.</p>
+  </div>
+  <div class="diamond">
+    <h2>Diamond Sponsors</h2>
+    <div class="sponsor">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+    </div>
+  </div>
+  <div class="platinum">
+    <h2>Platinum Sponsors</h2>
+    <div class="sponsor">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+    </div>
+  </div>
+  <div class="exhibitors">
+    <h2>Exhibitors</h2>
+    <div class="sponsor">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+    </div>
+  </div>
+  <div class="sponsor-partner">
+    <p> <button><a href="#"> BECOME OUR SPONSOR</a></button> </p>
+  </div>
+</div>
+
+<!-- Pricing details will go here -->
+
+<section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card text-center">
+            <div class="title">
+              <h2>Package One</h2>
+            </div>
+            <div class="price">
+              <h4>$25</h4>
+            </div>
+            <div class="option">
+              <ul>
+                <li>1 Conference day</li>
+                <li>1 Workshop Day</li>
+                <li>Free Cofee/Lunch</li>
+                <li>Custom Badge</li>
+              </ul>
+            </div>
+            <button class="btn btn-success"><a href="#">Register Now</a></button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card text-center">
+            <div class="title">
+              <h2>Package One</h2>
+            </div>
+            <div class="price">
+              <h4>$25</h4>
+            </div>
+            <div class="option">
+              <ul>
+                <li>1 Conference day</li>
+                <li>2 Workshop Day</li>
+                <li>Free Cofee/Lunch</li>
+                <li>Premium Badge</li>
+              </ul>
+            </div>
+            <button class="btn btn-success"><a href="#">Register Now</a></button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card text-center">
+            <div class="title">
+              <h2>Package One</h2>
+            </div>
+            <div class="price">
+              <h4>$25</h4>
+            </div>
+            <div class="option">
+              <ul>
+                <li>1 Conference day</li>
+                <li>1 Workshop Day</li>
+                <li>Free Cofee/Lunch</li>
+                <li>Custom Badge</li>
+              </ul>
+            </div>
+            <button class="btn btn-success"><a href="#">Register Now</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<section id="ts-venue" class="ts-venue">
+		<div class="container">
+			<div class="row text-center">
+				<h2 class="section-title">Venue Information</h2>
+				<p class="section-sub-title">Where to find us</p>
+			</div><!--/ Title row end -->
+
+			<div class="row">
+				<div class="col-md-4">
+					<div class="venu-info-content box1">
+						<span class="venu-info-icon"><i class="fa fa-map-marker"></i></span>
+						<h3 class="venu-info-title">Location</h3>
+						<p class="venu-info-text">PLEASE NOTE: The convention takes place at the <u>Grand Palace Banquet Hall,</u> 380 Birchmount Road, Toronto. See the map for exact information.</p>
+						<a href="#" class="venu-info-link">Read More <i class="fa fa-angle-right"></i></a>
+					</div><!-- Venu content end -->
+				</div><!-- Col 1 end -->
+
+				<div class="col-md-4">
+					<div class="venu-info-content box2">
+						<span class="venu-info-icon"><i class="fa fa-bus"></i></span>
+						<h3 class="venu-info-title">Transportation</h3>
+						<p class="venu-info-text">To get to the venu place, you can take one of the city bus lines, tube or railway service. All the services are comfortable to reach into the place (coming soon).</p>
+						<a href="#" class="venu-info-link">Read More <i class="fa fa-angle-right"></i></a>
+					</div><!-- Venu content end -->
+				</div><!-- Col 2 end -->
+
+				<div class="col-md-4">
+					<div class="venu-info-content box3">
+						<span class="venu-info-icon"><i class="fa fa-building"></i></span>
+						<h3 class="venu-info-title">Hotels</h3>
+						<p class="venu-info-text">Suitable Hotels and Restaurents are surrounded all the area. Use our promo code to book the listed hotels (coming soon).</p>
+						<a href="#" class="venu-info-link">Read More <i class="fa fa-angle-right"></i></a>
+					</div><!-- Venu content end -->
+				</div><!-- Col 3 end -->
+
+			</div><!-- Content row end -->
+		</div><!-- Container end -->
+	</section><!-- Venue end -->
+
+	<div id="map" class="map"></div> <!-- Google Map -->
+
+	<footer id="footer" class="footer text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<img src="images/footer-logo.png" alt="footer logo" />
+
+					<div class="footer-social"> <!-- Other social media links need to be updated-->
+						<ul>
+							<li><a href="https://www.facebook.com/jalalabadToronto/"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						</ul>
+					</div><!-- Footer social end -->
+
+					<div class="footer-menu"> <!-- Footer Menu links need to be activated -->
+						<ul class="nav">
+							<li><a href="#">About</a></li>
+							<li><a href="#">Speakers</a></li>
+							<li><a href="#">Become a Sponsor</a></li>
+							<li><a href="#">Videos</a></li>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Contacts</a></li>
+						</ul>
+					</div><!-- Footer menu end -->
+
+					<div class="copyright-info">
+						<span>Copyright © 2018 World Sylhet Convention. All Rights Reserved.</span>
+						</br>
+						<span>Exclusively designed &amp; customized by <a href="mailto:iliaskhan123@gmail.com?Subject=Hello" target="_top">Ilias Khan</a></span>
+					</div><!-- Copyright info end -->
+
+				</div><!-- Content col end -->
+			</div><!-- Content row end -->
+		</div><!-- Container end -->
+
+		<div class="footer-pattern"></div> <!-- Footer pattern image -->
+
+		<div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
+			<button class="btn btn-primary" title="Back to Top">
+				<i class="fa fa-angle-up"></i>
+			</button>
+		</div>
+
+	</footer><!-- Footer end -->
+
+    <!-- Custom Script fliles -->
+        <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

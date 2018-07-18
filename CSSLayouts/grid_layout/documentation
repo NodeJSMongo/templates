@@ -1,0 +1,24 @@
+//CSS Grid Terminology
+
+.Grid container
+.Grid item
+.Grid Line
+.Grid cell
+.Grid track
+.Grid area //grid-template-areas , area
+.Grid gap
+
+
+//Element containing a grid defined by setting = display: grid;
+//place items within the Grid
+//make world peace
+
+//nested grids
+
+
+//build accessible mobile-first layout without grids
+//use mobile first layout fallback for all browsers
+// use @support to detect grid support
+//at the appropriate break point, create layout with grid and grid areas.
+//Explore new layouts as viewpont widens
+//go to grid by example to find everything about css grids
